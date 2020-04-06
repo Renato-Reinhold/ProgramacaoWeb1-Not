@@ -1,0 +1,36 @@
+body{
+	background-color: #ADD8E6;
+	border: blue;
+	font-family: arial;
+}
+
+header{
+	padding: 40px 40px 40px 40px !important;
+}
+
+.container{
+	max-width: 1800px;
+	min-width: 600px;
+	margin-left: 100px;
+	margin-right: 100px;
+}
+
+.formater{
+	margin: 10px 10px 10px 0px;
+	border: 5px solid red;
+	background-color: blue;
+	color: #F8F8FF;
+	text-align: center;
+	padding: 0px 15px 15px 15px;
+	font-size: 20px;
+}
+
+main{
+	margin: 5px 5px 5px 0px;
+	border: 5px solid black;
+	background-color: white;
+	font-size: 20px;
+	max-width: 1800px;
+	min-height: 450px;
+}
+
