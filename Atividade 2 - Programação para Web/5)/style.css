@@ -1,0 +1,59 @@
+.container{
+  max-width: 1800px;
+  min-width: 50px;
+  margin-left: 25%;
+  margin-right: 25%;
+}
+
+.group-inputs{
+	max-width: 1200px;
+	min-width: 70px;
+}
+
+@media screen and (min-width: 600px;){
+	.group-inputs{
+		display: block;
+	}
+}
+
+.group-inputs, .input-item{
+	display: flex;
+	flex-wrap: wrap;
+	padding: 5px;
+}
+
+.input-item label{
+	border: solid 1px;
+	border-radius: 4px;
+	padding: 10px;
+	min-width: 100px;
+	text-align: center;
+}
+
+.input-item input{
+	border: solid 1px;
+	border-radius: 4px;
+	padding: 12px;
+	width: 100%;
+	resize: vertical;
+}
+
+.input-item input:hover{
+	border-color: #C0C0C0;
+}
+
+*{
+	box-sizing: border-box;
+}
+
+input[type=submit]{
+	float: right;
+	padding: 12px;
+	border-radius: 4px;
+	margin-top: 20px;
+}
+
+input[type=submit]:hover{
+	border-color: red;
+	cursor: pointer;
+}

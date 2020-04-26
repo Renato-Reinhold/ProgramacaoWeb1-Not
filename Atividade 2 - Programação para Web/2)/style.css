@@ -1,0 +1,38 @@
+body{  
+  font-family: times roman;
+}
+
+.container{
+  max-width: 1800px;
+  min-width: 50px;
+  margin-left: 25%;
+  margin-right: 25%;
+}
+
+td.item {
+  margin: 5px;
+  border: 1px solid black;
+  float: left;
+  width: 220px;
+}
+
+td.item img {
+  width: 100%;
+  height: auto;
+}
+
+table{
+  max-width: 1800px;
+  min-width: 50px;
+  border: solid 1px;
+  border-radius: 5px;
+}
+
+table tbody tr{
+  float: left;
+}
+
+td.item:hover {
+  border: 1px solid red;
+  border-radius: 2px;
+}

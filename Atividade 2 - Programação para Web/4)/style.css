@@ -1,0 +1,26 @@
+
+
+.container{
+  max-width: 1800px;
+  min-width: 50px;
+  margin-left: 25%;
+  margin-right: 25%;
+}
+
+table{
+	width: 100%;
+	border-collapse: collapse;
+	text-align: left;
+}
+
+table, td, th{
+	border: solid 1px #ccc;
+}
+
+th{
+	background-color: #ccc;
+}
+
+table tbody tr:nth-child(3n) {
+  background-color: #ccc;
+}
