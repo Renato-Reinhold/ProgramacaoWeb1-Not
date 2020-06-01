@@ -1,0 +1,154 @@
+* {
+	margin: 0px; 
+	padding: 0px; 
+	box-sizing: border-box;
+}
+
+body, html {
+	height: 100%;
+	font-family: sans-serif;
+}
+
+a {
+	font-size: 14px;
+	color: #666666;
+	margin: 0px;
+}
+
+a:hover {
+	text-decoration: none;
+  color: #1b3815;
+}
+
+h1, h2 {
+	margin: 0px;
+}
+
+input {
+	outline: none;
+	border: none;
+}
+
+button {
+	outline: none;
+	border: none;
+}
+
+button:hover {
+	cursor: pointer;
+}
+
+.msg-sign-up {
+  font-size: 15px;
+  color: #999999;
+}
+
+.link-sign-up {
+  font-size: 15px;
+  color: #4169E1;
+}
+
+.forget-sign{
+  padding-top: 40px;
+  padding-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.limite {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.container {
+  width: 100%;  
+  min-height: 55em;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  position: relative;
+  background-color: #fff;
+}
+
+.login {
+  width: 500px;
+  background: #fff;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 5px 10px 10px rgba(0, 0, 0, 0.1);
+}
+
+.login-form {
+  width: 100%;
+  position: relative;
+  padding-left: 55px;
+  padding-right: 55px;
+  padding-top: 178px;
+}
+
+.login-form-title {
+  font-size: 30px;
+  color: #fff;
+  text-align: center;
+  display: block;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: #4169E1;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+
+.input {
+  font-size: 15px;
+  color: #1b3815;
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 55px;
+  background: #ebebeb;
+  border-radius: 27px;
+  padding: 0 30px 0 30px;
+}
+
+.group-input{
+  margin-bottom: 16px;
+}
+
+.container-login-form-btn {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#submit {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+  width: 100%;
+  height: 50px;
+  background-color: #4169E1;
+  border-radius: 25px;
+  font-size: 15px;
+  color: #fff;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #00008B;
+}
+
+@media (max-width: 576px) {
+  .login100-form {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}

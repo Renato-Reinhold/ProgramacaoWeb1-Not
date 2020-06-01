@@ -1,0 +1,44 @@
+<!DOCTYPE>
+<html lang="pt-br">
+<head>
+	<title>Login | Gestor de jogos esportivos</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/login.css">
+</head>
+<body>
+	
+	<div class="container limite">
+		<div class="login">
+			<form class="login-form">
+				<span class="login-form-title">Sign In</span>
+
+				<div class="group-input">
+					<input class="input" type="text" id="username" placeholder="Username">
+				</div>
+
+				<div class="group-input" style="margin-bottom: 100px;">
+					<input class="input" type="password" id="pass" placeholder="Password">
+				</div>
+
+				<input type="button" id="submit" value="Sign in" onclick="do_login()" />
+
+			</form>
+		</div>
+	</div>
+	
+
+</body>
+<script type="text/javascript">
+	function do_login(){
+	   var username = document.getElementById('username').value;
+	   var password = document.getElementById('pass').value;
+
+	    if(username == 'adg' && password == '123'){
+	    	window.location.replace("index.html");
+	    }else{
+	        alert('Login incorreto!');
+	    }
+	}
+</script>
+</html>
