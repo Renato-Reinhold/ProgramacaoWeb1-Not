@@ -1,0 +1,13 @@
+* {
+	box-sizing: border-box;
+}
+
+h1{
+	text-align: center;
+}
+
+div#form{
+	padding: 1rem;
+	background-color: #212529;
+	color: white;
+}
