@@ -1,0 +1,385 @@
+FORMAT: 1A
+HOST: https://polls.apiblueprint.org/
+
+# Agência de aluguel de carros
+
+Trabalho 3 parte 2 - Uma especificação de uma utilização de uma web API com o CRUD de pessoas e carros.
+
+## Lista do Carro [/carros]
+
+### Listagem de todos os carros [GET]
+
++ Response 200 (application/json)
+
+        [
+            {
+                "id": 1,
+                "nome": "Gol",
+                "marca": "Volkswagen",
+                "ano": "2012",
+                "preco": "25.591",
+                "cor": "Cinza",
+                "pessoas":  [
+                                {
+                                    "id": 1,
+                                    "nome": "Cauã Caio Rodrigues",
+                                    "email": "cauacaiorodrigues-84@lbrazil.com.br",
+                                    "data_nasc": "16/12/1984",
+                                    "estado": "SP",
+                                    "sexo": "Masculino"
+                                },
+                                {
+                                    "id": 2,
+                                    "nome": "Leonardo Miguel Marcos Vinicius Ferreira",
+                                    "email": "leonardomiguelmarcosviniciusferreira_@mfb.com.br",
+                                    "data_nasc": "24/04/1961",
+                                    "estado": "SC",
+                                    "sexo": "Masculino"
+                                }
+                            ]
+            },
+            {
+                "id": 2,
+                "nome": "Uno",
+                "marca": "Fiat",
+                "ano": "2008",
+                "preco": "21.370",
+                "cor": "Cinza",
+                "pessoas": [
+                                {
+                                    "id": 3,
+                                    "nome": "Mário Renan Mendes",
+                                    "email": "mariorenanmendes__mariorenanmendes@iacit.com.br",
+                                    "data_nasc": "15/07/1962",
+                                    "estado": "RS",
+                                    "sexo": "Masculino"
+                                },
+                                {
+                                    "id": 4,
+                                    "nome": "Pedro Levi Oliver Caldeira",
+                                    "email": "pedroleviolivercaldeira_@yahho.com.br",
+                                    "data_nasc": "08/04/1968",
+                                    "estado": "RG",
+                                    "sexo": "Masculino"
+                                }
+                            ]
+            },
+            {
+                "id": 3,
+                "nome": "Palio",
+                "marca": "Fiat",
+                "ano": "2005",
+                "preco": "18.824",
+                "cor": "Branco"
+            },
+            {
+                "id": 4,
+                "nome": "Fox",
+                "marca": "Volkswagen",
+                "ano": "2010",
+                "preco": "14.601",
+                "cor": "Preto"
+            },
+            {
+                "id": 5,
+                "nome": "Celta",
+                "marca": "General Motors",
+                "ano": "2006",
+                "preco": "12.074",
+                "cor": "Vermelho",
+                "pessoas": [
+                                {
+                                    "id": 5,
+                                    "nome": "Benjamin Arthur dos Santos",
+                                    "email": "benjaminarthurdossantos..benjaminarthurdossantos@freitasprior.com.br",
+                                    "data_nasc": "20/09/1987",
+                                    "estado": "SP",
+                                    "sexo": "Masculino"
+                                },
+                                {
+                                    "id": 6,
+                                    "nome": "Luiz Isaac da Mota",
+                                    "email": "luizisaacdamota-94@galvao.com",
+                                    "data_nasc": "07/09/1980",
+                                    "estado": "SC",
+                                    "sexo": "Masculino"
+                                },
+                                {
+                                    "id": 7,
+                                    "nome": "Gustavo Alexandre Novaes",
+                                    "email": "ggustavoalexandrenovaes@humanfit.com.br",
+                                    "data_nasc": "02/04/1944",
+                                    "estado": "RS",
+                                    "sexo": "Masculino"
+                                }
+                        ]
+            },
+            {
+                "id": 6,
+                "nome": "HB20",
+                "marca": "Hyundai",
+                "ano": "2015",
+                "preco": "46.490",
+                "cor": "Azul"
+            },
+            {
+                "id": 7,
+                "nome": "Corsa Sedan",
+                "marca": "General Motors",
+                "ano": "2016",
+                "preco": "27.990",
+                "cor": "Cinza"
+            },
+            {
+                "id": 8,
+                "nome": "Onix",
+                "marca": "General Motors",
+                "ano": "2020",
+                "preco": "33.890",
+                "cor": "Cinza",
+                "pessoas": [
+                                {
+                                    "id": 8,
+                                    "nome": "Francisca Laís Costa",
+                                    "email": "franciscalaiscosta_@yahoo.com,br",
+                                    "data_nasc": "25/06/1987",
+                                    "estado": "RG",
+                                    "sexo": "Feminino"
+                                },
+                                {
+                                    "id": 9,
+                                    "nome": "Miguel Enzo Rezende",
+                                    "email": "miguelenzorezende-82@policiapenal.com",
+                                    "data_nasc": "19/07/1971",
+                                    "estado": "SP",
+                                    "sexo": "Masculino"
+                                },
+                                {
+                                    "id": 10,
+                                    "nome": "Marcos Otávio Edson Ribeiro",
+                                    "email": "mmarcosotavioedsonribeiro@igoralcantara.com.br",
+                                    "data_nasc": "03/06/1974",
+                                    "estado": "SC",
+                                    "sexo": "Masculino"
+                                }
+                           ]
+            },
+            {
+                "id": 9,
+                "nome": "Fiesta",
+                "marca": "Ford",
+                "ano": "2016",
+                "preco": "69.490",
+                "cor": "Preto"
+            },
+            {
+                "id": 10,
+                "nome": "Civic",
+                "marca": "Honda",
+                "ano": "2020",
+                "preco": "97.900",
+                "cor": "Preto"
+            }
+        ]
+
+## Create de carro [/carros/create]
+
+### Adição de um novo carro [POST]
+
++ Request (application/json)
+
+        {
+            "nome": "Sandero",
+            "marca": "Renault",
+            "ano": "2016",
+            "preco": "69.490",
+            "cor": "Branco"
+        }
+
++ Response 201 (application/json)
+
+    + Headers
+
+            Location: /carro/create
+
+    + Body
+
+        {
+            "id": 11,
+            "nome": "Sandero",
+            "marca": "Renault",
+            "ano": "2016",
+            "preco": "69.490",
+            "cor": "Branco"
+        }
+        
+## Update de carro [/carros/update/{id}]
+
+### Atualizar o registro de um carro [PUT]
+
++ Request (application/json)
+
+        {
+            "nome": "Sandero",
+            "marca": "Renault",
+            "ano": "2016",
+            "preco": "69.490",
+            "cor": "Branco"
+        }
+
++ Response 201 (application/json)
+
+    + Headers
+
+            Location: /carro/update/{id}
+
+    + Body
+
+        {
+            "id": 11,
+            "nome": "Sandero",
+            "marca": "Renault",
+            "ano": "2016",
+            "preco": "69.490",
+            "cor": "Branco"
+        }
+        
+        
+## Delete de carro [/carros/delete/{id}]
+
+### Deletar o registro de um carro [DELETE]
+
+
++ Response 200 (application/json)
+
+    + Headers
+
+            Location: /pessoas/delete/{id}
+
+    + Body
+
+        {
+            "id": 11,
+            "status": "success",
+            "mensagem": "Sucesso! registro excluído."
+        }
+        
+## Lista de Pessoa [/pessoas]
+
+### Listagem de todas as pessoas [GET]
+
++ Response 200 (application/json)
+
+        [
+            {
+                "id": 1,
+                "nome": "Cauã Caio Rodrigues",
+                "email": "cauacaiorodrigues-84@lbrazil.com.br",
+                "data_nasc": "16/12/1984",
+                "estado": "SP",
+                "sexo": "Masculino"
+            },
+            {
+                "id": 2,
+                "nome": "Leonardo Miguel Marcos Vinicius Ferreira",
+                "email": "leonardomiguelmarcosviniciusferreira_@mfb.com.br",
+                "data_nasc": "24/04/1961",
+                "estado": "SC",
+                "sexo": "Masculino"
+            },
+            {
+                "id": 3,
+                "nome": "Mário Renan Mendes",
+                "email": "mariorenanmendes__mariorenanmendes@iacit.com.br",
+                "data_nasc": "15/07/1962",
+                "estado": "RS",
+                "sexo": "Masculino"
+            },
+            {
+                "id": 4,
+                "nome": "Pedro Levi Oliver Caldeira",
+                "email": "pedroleviolivercaldeira_@yahho.com.br",
+                "data_nasc": "08/04/1968",
+                "estado": "RG",
+                "sexo": "Masculino"
+            },
+            {
+                "id": 5,
+                "nome": "Benjamin Arthur dos Santos",
+                "email": "benjaminarthurdossantos..benjaminarthurdossantos@freitasprior.com.br",
+                "data_nasc": "20/09/1987",
+                "estado": "SP",
+                "sexo": "Masculino"
+            },
+            {
+                "id": 6,
+                "nome": "Luiz Isaac da Mota",
+                "email": "luizisaacdamota-94@galvao.com",
+                "data_nasc": "07/09/1980",
+                "estado": "SC",
+                "sexo": "Masculino"
+            },
+            {
+                "id": 7,
+                "nome": "Gustavo Alexandre Novaes",
+                "email": "ggustavoalexandrenovaes@humanfit.com.br",
+                "data_nasc": "02/04/1944",
+                "estado": "RS",
+                "sexo": "Masculino"
+            },
+            {
+                "id": 8,
+                "nome": "Francisca Laís Costa",
+                "email": "franciscalaiscosta_@yahoo.com,br",
+                "data_nasc": "25/06/1987",
+                "estado": "RG",
+                "sexo": "Feminino"
+            },
+            {
+                "id": 9,
+                "nome": "Miguel Enzo Rezende",
+                "email": "miguelenzorezende-82@policiapenal.com",
+                "data_nasc": "19/07/1971",
+                "estado": "SP",
+                "sexo": "Masculino"
+            },
+            {
+                "id": 10,
+                "nome": "Marcos Otávio Edson Ribeiro",
+                "email": "mmarcosotavioedsonribeiro@igoralcantara.com.br",
+                "data_nasc": "03/06/1974",
+                "estado": "SC",
+                "sexo": "Masculino"
+            }
+        ]
+
+## Create de Pessoa [/pessoas/create]
+
+### Adição de uma nova pessoa [POST]
+
++ Request (application/json)
+
+        {
+            "nome": "Guilherme Antonio Tomás Barbosa",
+            "email": "guilhermeantoniotomasbarbosa-70@maxilajes.com.br",
+            "data_nasc": "16/03/1972",
+            "estado": "RG",
+            "sexo": "Masculino"
+        }
+
++ Response 201 (application/json)
+
+    + Headers
+
+            Location: /pessoa/create
+
+    + Body
+
+        {
+            "id": 11,
+            "nome": "Guilherme Antonio Tomás Barbosa",
+            "email": "guilhermeantoniotomasbarbosa-70@maxilajes.com.br",
+            "data_nasc": "16/03/1972",
+            "estado": "RG",
+            "sexo": "Masculino"
+        }
